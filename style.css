@@ -13,3 +13,29 @@
 #description {
   width: 452px;
 }
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.panel1 h2 {
+  margin-top: 0px;
+}
+
+.filters {
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+
+input[type='checkbox'] {
+
+  margin-right: 7px;
+
+}
+
+input[type='radio'] {
+
+  margin-right: 7px;
+
+}
