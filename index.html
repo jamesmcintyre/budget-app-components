@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="main.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Budget</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 panel1">
+        <h2>Current Balance: $0.00</h2>
+      </div>
+      <div class="col-md-6 panel2">
+
+
+
+        <!-- <form action="" id="addtransgroup">
+        <div class="col-md-12"><input type="text" name="" id="amount"></div>
+
+        <div class="col-md-7"><input type="checkbox" name="" class="checkbox-inline" id="credit">+Credit <input type="checkbox" name="" class="checkbox-inline" id="debit">-Debit</div>
+        <div class="col-md-5"><button type="submit" class="btn btn-success" id="add">Add!</button></div>
+      </form> -->
+      <form class="form-inline text-right pull-right" id="addtransgroup">
+        <div class="form-group">
+
+        <!-- <input type="text" name="" id="description" class="form-control"> -->
+
+        <div class="input-group">
+
+          <div class="input-group-addon">Description</div>
+          <input type="text" class="form-control" id="description" placeholder="Describe the transaction."></input>
+
+
+
+        </div>
+
+      <!-- <div class="col-md-12 panel3"> -->
+
+          <input type="radio" name="toggle" id="spend" class="radio-inline" checked>Spend</input>
+          <input type="radio" name="toggle" id="earn" class="radio-inline">Earn</input>
+          <label class="sr-only" for="amount">Amount</label>
+          <div class="input-group">
+
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="amount" placeholder="Amount"></input>
+
+
+
+          </div>
+
+<!-- </div> -->
+
+        </div>
+        <button type="submit" id="createtrans" class="btn btn-primary">Add</button>
+      </form>
+
+
+
+
+
+
+      </div>
+    </div>
+    <table class="table table-striped" id="transhist">
+      <tr class="header">
+        <th class="col-md-2"><p>Date</p></th>
+        <th class="col-md-5"><p>Description</p></th>
+        <th class="col-md-2" id="earntoggle"><p>Earnings</p></th>
+        <th class="col-md-2" id="spendtoggle"><p>Spending</p></th>
+        <th class="col-md-1"></th>
+      </tr>
+
+
+      <tr class="trans" id="template">
+        <td class="date"></td>
+        <td class="description"></td>
+        <td class="earn"></td>
+        <td class="spend"></td>
+        <td id="delete"><span id="delete" class="glyphicon glyphicon-trash"></span></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+</body>
+</html>
